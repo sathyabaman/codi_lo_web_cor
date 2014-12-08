@@ -77,7 +77,6 @@ class view_image_model extends CI_Model {
 
      }
 
-
      function get_you_may_like($id){
           $this->db->select('category_id');
           $this->db->from('tbl_images');
@@ -100,10 +99,6 @@ class view_image_model extends CI_Model {
 
           return $resultset;
      }
-
-
-
-
 
 }
 

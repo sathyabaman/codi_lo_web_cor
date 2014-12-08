@@ -131,7 +131,6 @@ class Home_model extends CI_Model {
     }
 
 
-
     function add_one_to_category($id){
       
       $this->db->select('total');

@@ -21,7 +21,6 @@ class image_report_model extends CI_Model {
         return $resultset;
     }
 
-
     function get_report_category_list(){
       $this->db->select('id, name');
       $this->db->where('status', 1);
@@ -43,8 +42,6 @@ class image_report_model extends CI_Model {
      return $results;
 
     }
-
-
 
 
 }
