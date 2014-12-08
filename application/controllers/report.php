@@ -6,14 +6,12 @@ class Report extends CI_Controller {
         parent::__construct();
       
       //session, url, satabase is set in auto load in the config
-      
         $this->load->model('image_report_model', 'image_report');
         $this->load->library('pagination');
     }
 
 
     function index($id=10){
-    
         redirect('category/');
     }
 
@@ -27,12 +25,8 @@ class Report extends CI_Controller {
         $this->load->view('report_image', $data);
     }
 
-
-
-
    function image_report() {
 
-        
         $report['category_id'] =$this->input->post('category');
         $report['image_id'] =$this->input->post('image_id');
         $encode_image = base64_encode($report['image_id']);
@@ -46,8 +40,6 @@ class Report extends CI_Controller {
             $report['description'] =$this->input->post('description');
             $report['image_id'] =$this->input->post('image_id');
          
-
-             
            $result = $this->image_report->insert_into_report_table($report);
 
              $message = "Thank you!... <br/>We will take action as soon as possible.";

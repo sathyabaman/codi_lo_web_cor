@@ -17,7 +17,6 @@ class View extends CI_Controller {
         redirect('category/');
     }
 
-
     function image(){
         $image_id =  $this->uri->segment(3);
 
@@ -30,7 +29,6 @@ class View extends CI_Controller {
         $data['next_image']  = $this->view_image->get_next_image($image_id);
         $data['previous_image']  = $this->view_image->get_previous_image($image_id);
         
-
         if ($data['img_details']) {
             $this->load->view('view_image', $data);
         }else{

@@ -9,11 +9,8 @@ class Home extends CI_Controller {
       
         $this->load->model('Home_model', 'home');
         $this->load->library('pagination');
-    
 
     }
-
-
 
     function index(){
       redirect('home/most_recent/');
