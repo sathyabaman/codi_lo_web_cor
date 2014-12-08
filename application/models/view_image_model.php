@@ -100,10 +100,6 @@ class view_image_model extends CI_Model {
           return $resultset;
      }
 
-
-
-
-
 }
 
 ?>

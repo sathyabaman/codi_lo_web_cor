@@ -44,8 +44,6 @@ class image_report_model extends CI_Model {
     }
 
 
-
-
 }
 
 ?>
