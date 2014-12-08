@@ -88,12 +88,6 @@ class Admin_model extends CI_Model {
     }
 
 
-
-
-
-
-
-
     function approve_image($id){
       $data = array('status' => 1);
       $this->db->where('id', $id);
