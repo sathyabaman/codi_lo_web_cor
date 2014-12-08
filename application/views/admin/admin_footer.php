@@ -1,0 +1,1 @@
+<td height="26" colspan="3"> <div align="center">Copyrights © Lolcorps.com 2014 - 2015</div></td>
