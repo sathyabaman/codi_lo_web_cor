@@ -83,10 +83,6 @@ class admin404500_corps extends CI_Controller {
     }
 
 
-
-
-
-
     function approve_iamge($id){
        $this->admin->approve_image($id);
        redirect('/admin404500_corps/image_approval/');
